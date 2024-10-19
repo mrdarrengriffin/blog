@@ -6,7 +6,7 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-		
+
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -76,5 +76,22 @@
 
 		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+		<script>
+			let facadesLoaded = false;
+			let facaded = document.querySelectorAll('*[data-src]');
+			if(facaded.length){
+				window.addEventListener('mousemove', loadFacaded, {once: true});
+				window.addEventListener('touchstart', loadFacaded, {once: true});
+				window.addEventListener('scroll', loadFacaded, {once: true});
+			}
+
+			function loadFacaded() {
+				if(facadesLoaded) return;
+				facaded.forEach((el) => {
+					el.src = el.getAttribute('data-src');
+					el.removeAttribute('data-src');
+				});
+			}
+		</script>
 	</body>
 </html>

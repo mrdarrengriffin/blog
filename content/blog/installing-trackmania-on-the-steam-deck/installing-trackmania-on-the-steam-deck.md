@@ -173,4 +173,4 @@ See below some documentation by oh-nyoo on GitHub who details how to achieve thi
 18. Use a keyboard to press F3 or edit your Steam Deck controller layout to add a F3 button (e.g. on the backbuttons)
 19. Install your Openplanet plugins and have fun racing 🙂
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async data-src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

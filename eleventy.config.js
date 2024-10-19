@@ -100,6 +100,29 @@ export default async function (eleventyConfig) {
 		return (new Date()).toISOString();
 	});
 
+	// eleventy transformer, convert iframe attributes (src) to data-src
+	eleventyConfig.addTransform("iframe-lazy-load", (content, outputPath) => {
+		if (outputPath.endsWith(".html")) {
+			// get all iframes
+			const iframes = content.match(/<iframe[^>]+>/g);
+			// foreach iframe...
+			if (iframes) {
+				iframes.forEach(iframe => {
+					// get the src attribute
+					const src = iframe.match(/src="([^"]+)"/);
+					if (src) {
+						// replace src with data-src
+						content = content.replace(src[0], `data-src="${src[1]}"`);
+					}
+				});
+			}
+		}
+		console.log("iframe-lazy-load", outputPath);
+		return content;
+	});
+
+
+
 	// Hero
 	eleventyConfig.addShortcode("hero", function () {
 		// if ./hero.(jpg|jpeg|png|gif|svg) exists, return an img tag
