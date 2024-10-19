@@ -17,7 +17,7 @@ In terms of Openplanet, we saw a <a href="https://x.com/OpenplanetDev/status/161
 
 If you are browing this article on your PC/Steam Deck, use the widget below to open the Trackmania store page on Steam directly.
 
-<iframe src="https://store.steampowered.com/widget/2225070/" frameborder="0" width="646" height="190"></iframe>
+<iframe title="Trackmania 2020 Steam listing" src="https://store.steampowered.com/widget/2225070/" frameborder="0" width="646" height="190"></iframe>
 
 ### The announcement
 
@@ -55,7 +55,7 @@ Basking in all it's glory, The only thing on my mind to install first was Trackm
 
 If you're like me and want to play Trackmania on your Steam Deck, feel free to follow along as we install and play the game.
 
-## Prerequisites
+### Prerequisites
 
 Before we begin, I want to outline a few things which justifies some odd steps in the installation process:
 
@@ -69,11 +69,11 @@ The Steam Deck runs on a modified version of Arch Linux and as it stands, Ubisof
 
 You will need to put your Steam Deck in Desktop Mode to follow this tutorial (Steam Button > Power > Switch to Desktop). Once in Desktop Mode, open up the browser (Firefox by default) and navigate to this article for a smoother experience.
 
-## Installation
+### Installation
 
 Okay, we've taken care of the nitty gritty so let's get started.
 
-## Ubisoft Connect
+#### Ubisoft Connect
 
 First thing's first - we need the Ubisoft Connect launcher. We're going to be downloading the Windows executable and will be utilising Proton to install the application.
 
@@ -82,7 +82,7 @@ Alternatively, you can click this link to download the launcher directly: <a hre
 
 Once downloaded, the file should end up in your Downloads folder (/home/deck/Downloads) and should be called something like UbisoftConnectInstaller.exe
 
-## Adding the Ubisoft Connect installer to Steam
+#### Adding the Ubisoft Connect installer to Steam
 
 We will now need to utilise Proton to run the executable we just downloaded. Guided image instructions are provided below the following steps for you
 
@@ -150,7 +150,7 @@ See below some documentation by oh-nyoo on GitHub who details how to achieve thi
 
 <a href="https://github.com/oh-nyoo/steam-deck-advance/wiki/Setting-Custom-Art" target="_blank">https://github.com/oh-nyoo/steam-deck-advance/wiki/Setting-Custom-Art</a>
 
-## Installing Openplanet
+### Installing Openplanet
 *Credit to Marcieslaf for contributing these instructions*
 
 1. Go into Desktop Mode
