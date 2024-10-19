@@ -1,4 +1,3 @@
-import { Image } from "@11ty/eleventy-img";
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {

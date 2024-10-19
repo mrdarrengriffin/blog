@@ -319,9 +319,18 @@ iframe{
 	max-width: calc(100vw - 2rem) !important;
 }
 
+picture{
+	display: flex;
+}
 img{
+	display: flex;
 	max-width: 100%;
 	height: 100%;
+	border-radius: 8px;
+}
+
+picture + picture, img + img{
+	margin-top: 1rem;
 }
 
 code{

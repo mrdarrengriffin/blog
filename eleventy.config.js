@@ -25,11 +25,15 @@ export default async function (eleventyConfig) {
 	// Decap CMS
 	eleventyConfig.addPassthroughCopy("admin");
 
+	// JS
+	eleventyConfig.addPassthroughCopy("bundle.js");
+
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
 	// Watch content images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+	eleventyConfig.addWatchTarget("bundle.js");
 
 	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Adds the {% css %} paired shortcode
@@ -78,12 +82,15 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// File extensions to process in _site folder
 		extensions: "html",
+		widths: [300, 600, 768],
 		// Output formats for each image.
 		formats: ["webp", "avif", "auto"],
 		defaultAttributes: {
 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
 			loading: "lazy",
 			decoding: "async",
+			sizes: "100vw",
+			alt: ""
 		}
 	});
 
@@ -119,21 +126,6 @@ export default async function (eleventyConfig) {
 		}
 		console.log("iframe-lazy-load", outputPath);
 		return content;
-	});
-
-
-
-	// Hero
-	eleventyConfig.addShortcode("hero", function () {
-		// if ./hero.(jpg|jpeg|png|gif|svg) exists, return an img tag
-		// else return an empty string
-		const heroPath = './';
-		const heroFiles = fs.readdirSync(heroPath);
-		const heroImage = heroFiles.find(file => /\.(jpg|jpeg|png|gif|svg)$/i.test(file));
-		if (heroImage) {
-			return `<img src="/content/hero/${heroImage}" alt="Hero image">`;
-		}
-		return "p1p";
 	});
 
 	// Features to make your build faster (when you need them)

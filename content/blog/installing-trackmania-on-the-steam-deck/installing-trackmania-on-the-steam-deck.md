@@ -93,10 +93,10 @@ We will now need to utilise Proton to run the executable we just downloaded. Gui
 5. The UbisoftConnectInstaller should now be on the "Add a Game" list. Ensure it's checked and click "Add Selected Programs"
 6. You should now see UbisoftConnectInstaller.exe as a game in your library. Don't open it yet because nothing will happen 👀
 
-<img src="./non-steam-game.jpg" width="100%" alt="">
-<img src="./non-steam-game-browse.jpg" width="100%" alt="">
-<img src="./non-steam-game-selected.jpg" width="100%" alt="">
-<img src="./non-steam-game-add.jpg" width="100%" alt="">
+<img src="./non-steam-game.jpg">
+<img src="./non-steam-game-browse.jpg">
+<img src="./non-steam-game-selected.jpg">
+<img src="./non-steam-game-add.jpg">
 
 #### Installing the Ubisoft Connect
 
@@ -118,14 +118,14 @@ Once you have the UbisoftConnectLauncher.exe in your library:
 
 9. Finally, you can now run the game and use Ubisoft Connect
 
-<img src="./ubisoft-properties-context.jpg" width="100%" alt="">
-<img src="./ubisoft-proton-7.jpg" width="100%" alt="">
-<img src="./ubisoft-installer-1.jpg" width="100%" alt="">
-<img src="./ubisoft-installer-2.jpg" width="100%" alt="">
-<img src="./ubisoft-installer-3.jpg" width="100%" alt="">
-<img src="./ubisoft-installer-4.jpg" width="100%" alt="">
-<img src="./ubisoft-relocate.jpg" width="100%" alt="">
-<img src="./ubisoft-connect-rename.jpg" width="100%" alt="">
+<img src="./ubisoft-properties-context.jpg">
+<img src="./ubisoft-proton-7.jpg">
+<img src="./ubisoft-installer-1.jpg">
+<img src="./ubisoft-installer-2.jpg">
+<img src="./ubisoft-installer-3.jpg">
+<img src="./ubisoft-installer-4.jpg">
+<img src="./ubisoft-relocate.jpg">
+<img src="./ubisoft-connect-rename.jpg">
 
 #### Setup Ubisoft Connect and Install Trackmania
 
@@ -137,12 +137,12 @@ This is probably the easiest part as the steps to install Trackmania are identic
 4. Once installed, Launch Trackmania via Ubisoft Connect in Desktop mode just to ensure it launches.
 **Note: The controller may not work as we're not in Gaming Mode yet**
 
-<img src="./ubisoft-login.jpg" width="100%" alt="">
-<img src="./trackmania-download.jpg" width="100%" alt="">
-<img src="./trackmania-download-2.jpg" width="100%" alt="">
+<img src="./ubisoft-login.jpg">
+<img src="./trackmania-download.jpg">
+<img src="./trackmania-download-2.jpg">
 
 #### Launching from Gaming Mode
-<img src="./game-mode.jpg" width="100%" alt="">
+<img src="./game-mode.jpg">
 
 Now we've added the custom game to our Steam Library, if we switch back to Gaming Mode, we will see a new Ubisoft Connect tile. As you may notice from my screenshot below, I have artwork on my tile whereas you will not.
 
@@ -172,5 +172,3 @@ See below some documentation by oh-nyoo on GitHub who details how to achieve thi
 17. A Openplanet Popup should appear for you to press F3
 18. Use a keyboard to press F3 or edit your Steam Deck controller layout to add a F3 button (e.g. on the backbuttons)
 19. Install your Openplanet plugins and have fun racing 🙂
-
-<script async data-src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
