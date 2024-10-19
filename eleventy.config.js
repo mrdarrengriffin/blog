@@ -27,10 +27,6 @@ export default async function (eleventyConfig) {
 	// Decap CMS
 	eleventyConfig.addPassthroughCopy("admin");
 
-	// redirect /test to /blog/test
-	eleventyConfig.addPassthroughCopy({
-		
-
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
