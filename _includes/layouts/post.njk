@@ -5,7 +5,7 @@ layout: layouts/base.njk
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 {%- if hero %}
-	<img src="./hero.jpg" alt="" class="post-hero" eleventy:loading="eager">
+	<img src="./hero.jpg" alt="" class="post-hero" loading decoding="sync">
 {%- endif %}
 <h1>{{ title }}</h1>
 <p class="description">{{ description }}</p>
