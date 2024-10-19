@@ -181,7 +181,7 @@ header {
 	gap: .125rem;
 }
 .site-info span{
-	color: color-mix(in srgb, var(--color-gray-90), transparent 50%);
+	color: color-mix(in srgb, var(--color-gray-90), transparent 25%);
 	font-size: 12px;
 }
 
