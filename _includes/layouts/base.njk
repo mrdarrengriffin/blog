@@ -45,10 +45,10 @@
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
-
+	<div class="grid">
 		<header>
 			<div class="site-logo">	
-				<a href="/" class="home-link">
+				<a href="/" class="logo">
 					<img src="{{ metadata.avatar }}" eleventy:ignore class="avatar" width="32" alt="{{metadata.title}}">
 				</a>
 				<div class="site-info">
@@ -75,8 +75,10 @@
 				{{ content | safe }}
 			</heading-anchors>
 		</main>
+		</div>
 
 		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
 	</body>
+
 </html>
