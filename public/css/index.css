@@ -402,7 +402,7 @@ h1+p.description {
 .post-hero {
 	border-radius: 8px;
 	margin-bottom: 1rem;
-	aspect-ratio: 16/9;
+	aspect-ratio: 14/7;
 	object-fit: cover;
 	width: 100%;
 }
